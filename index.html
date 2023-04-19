@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dominos</title>
+    <style>
+      .nav{height:50px ; width:100% ;;margin-bottom:50px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+      nav{display:flex}
+nav>div{ height:50px; width:70% ;margin-right:30px}
+nav>button{background-color: red;}
+
+/* --------------------- */
+.top{height:1000px ; width:100% ;margin-bottom:30px}
+.top>div{height: 85% ; width:100% ;display:grid;
+grid-template-columns: repeat(3,31%);
+grid-template-rows: repeat(3,45%);
+grid-gap:20px
+}
+.top>div>div{text-align: center;background-color: red;color:white}
+.top>div>div>img{height:55% ;width:70%;margin:auto;display:block}
+/* --------------------- */
+.mid{height:700px ; width:100% ;  margin-bottom:50px}
+
+.mid>div{height:80% ; width:100% ;display:grid;text-align: center;
+  grid-template-columns: repeat(4,22%);
+grid-template-rows: repeat(2,48%);
+grid-gap:20px
+}
+.mid>div>div{box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+.mid>div>div>img{height:40% ; width:40% ;margin:auto;display:block}
+.mid>div>div>div{height:10% ; width:98% ;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;color:red}
+
+/* --------------------- */
+.bottom{height:400px ; width:100% ;display:flex ; justify-content: center;align-items: center;background-color: grey;}
+.bottom>div{height:98% ; width:48%;padding-left:20px}
+.bottom>div>img:nth-child(1){height:70% ; width:80%}
+.bottom>div:nth-child(2){text-align: center;}
+.bottom>div:nth-child(2)>img{height:20% ; width:30%}
+
+
+
+      /* Write all styles here  */
+      @media only screen and (max-width: 1000px) {
+        /* Medium Screen  */
+        .nav{height:50px ; width:100% ;;margin-bottom:50px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+      nav{display:flex}
+nav>div{ height:50px; width:70% ;margin-right:30px}
+nav>button{background-color: red;}
+
+/* --------------------- */
+.top{height:1000px ; width:100% ;margin-bottom:30px}
+.top>div{height: 85% ; width:100% ;display:grid;
+grid-template-columns: repeat(3,31%);
+grid-template-rows: repeat(3,45%);
+grid-gap:20px
+}
+.top>div>div{text-align: center;background-color: red;color:white}
+.top>div>div>img{height:55% ;width:70%;margin:auto;display:block}
+/* --------------------- */
+.mid{height:700px ; width:100% ;  margin-bottom:50px}
+
+.mid>div{height:80% ; width:100% ;display:grid;text-align: center;
+  grid-template-columns: repeat(4,22%);
+grid-template-rows: repeat(2,48%);
+grid-gap:20px
+}
+.mid>div>div{box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+.mid>div>div>img{height:40% ; width:40% ;margin:auto;display:block}
+.mid>div>div>div{height:10% ; width:98% ;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;color:red}
+
+/* --------------------- */
+.bottom{height:400px ; width:100% ;display:flex ; justify-content: center;align-items: center;background-color: grey;}
+.bottom>div{height:98% ; width:48%;padding-left:20px}
+.bottom>div>img:nth-child(1){height:70% ; width:80%}
+.bottom>div:nth-child(2){text-align: center;}
+.bottom>div:nth-child(2)>img{height:20% ; width:30%}
+
+      }
+
+      @media only screen and (max-width: 600px) {
+        /* Small Screen  */
+        .nav{height:50px ; width:100% ;;margin-bottom:50px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+      nav{display:flex}
+nav>div{ height:50px; width:70% ;margin-right:30px}
+nav>button{background-color: red;}
+
+/* --------------------- */
+.top{height:1000px ; width:100% ;margin-bottom:30px}
+.top>div{height: 85% ; width:100% ;display:grid;
+grid-template-columns: repeat(3,31%);
+grid-template-rows: repeat(3,45%);
+grid-gap:20px
+}
+.top>div>div{text-align: center;background-color: red;color:white}
+.top>div>div>img{height:55% ;width:70%;margin:auto;display:block}
+/* --------------------- */
+.mid{height:700px ; width:100% ;  margin-bottom:50px}
+
+.mid>div{height:80% ; width:100% ;display:grid;text-align: center;
+  grid-template-columns: repeat(4,22%);
+grid-template-rows: repeat(2,48%);
+grid-gap:20px
+}
+.mid>div>div{box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+.mid>div>div>img{height:40% ; width:40% ;margin:auto;display:block}
+.mid>div>div>div{height:10% ; width:98% ;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;color:red}
+
+/* --------------------- */
+.bottom{height:400px ; width:100% ;display:flex ; justify-content: center;align-items: center;background-color: grey;}
+.bottom>div{height:98% ; width:48%;padding-left:20px}
+.bottom>div>img:nth-child(1){height:70% ; width:80%}
+.bottom>div:nth-child(2){text-align: center;}
+.bottom>div:nth-child(2)>img{height:20% ; width:30%}
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <nav>
+        <h1>Domino's Pizza</h1>
+        <div><p>OUR MENU DOMINO STORES GIFT CARD CORPORATE ENQUIRY CONTACT</p></div>
+        <button>Download App</button>
+      </nav>
+      <!-- Create the Navbar here  -->
+      <!-- Use Flex to achieve the layout  -->
+    </div>
+    <!-- ----------------------- -->
+    <div class="top">
+      <h1>Order</h1>
+      <div>
+        <!-- Here should have 6 divs -->
+        <!-- Use grid to achieve the layout -->
+        <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="">
+        <h3>VEG PIZZA</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, tempora?</p>
+        <button>VIEW ALL</button>
+        </div>
+
+        <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="">
+          <h3>VEG PIZZA</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, tempora?</p>
+          <button>VIEW ALL</button>
+        </div>
+
+        <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="">
+          <h3>VEG PIZZA</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, tempora?</p>
+          <button>VIEW ALL</button>
+        </div>
+
+        <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="">
+          <h3>VEG PIZZA</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, tempora?</p>
+          <button>VIEW ALL</button>
+        </div>
+
+        <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="">
+          <h3>VEG PIZZA</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, tempora?</p>
+          <button>VIEW ALL</button>
+        </div>
+
+        <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="">
+          <h3>VEG PIZZA</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, tempora?</p>
+          <button>VIEW ALL</button>
+        </div>
+      </div>
+    </div>
+
+     <!-- ----------------------- -->
+    <div class="mid">
+      <h1>Explore</h1>
+      <div>
+        <!-- Here should have 8 divs -->
+        <!-- Use grid to achieve the layout -->
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="">
+        <h3>OUR MENU</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eum.</p>
+        <div>DISCOVER PIZZA</div>
+        </div>
+
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="">
+        <h3>OUR MENU</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eum.</p>
+        <div>DISCOVER PIZZA</div>
+        </div>
+
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="">
+        <h3>OUR MENU</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eum.</p>
+        <div>DISCOVER PIZZA</div>
+        </div>
+
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="">
+        <h3>OUR MENU</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eum.</p>
+        <div>DISCOVER PIZZA</div>
+        </div>
+
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="">
+        <h3>OUR MENU</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eum.</p>
+        <div>DISCOVER PIZZA</div>
+        </div>
+
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="">
+        <h3>OUR MENU</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eum.</p>
+        <div>DISCOVER PIZZA</div>
+        </div>
+
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="">
+        <h3>OUR MENU</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eum.</p>
+        <div>DISCOVER PIZZA</div>
+        </div>
+
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="">
+        <h3>OUR MENU</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eum.</p>
+        <div>DISCOVER PIZZA</div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="bottom">
+      <!-- Use Flex to achieve the layout  -->
+      <div>
+        <!-- Left hand side part  -->
+        <img src="https://www.dominos.co.in/assets/new_app_img@2x.png" alt="">
+      </div>
+
+      <div>
+        <!-- Right hand side part  -->
+        <h1>UNLOCK EXCLUSIVE OFFERS</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, vitae.</p>
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%202.47.09%20PM_558991.png" alt="">
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%202.47.43%20PM_652243.png" alt="">
+      </div>
+    </div>
+  </body>
+</html>
